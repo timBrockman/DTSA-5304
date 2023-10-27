@@ -1,0 +1,306 @@
+E80331.00    [ARREST_TOTNUM]                                Survey Year: XRND
+  PRIMARY VARIABLE
+
+ 
+             TOTAL NUMBER OF ARRESTS
+ 
+Total number of arrests as reported by the respondent.
+ 
+    5786           0
+    2421           1 TO 4
+     477           5 TO 9
+     159          10 TO 14
+      74          15 TO 19
+      30          20 TO 24
+      17          25 TO 29
+       7          30 TO 34
+       4          35 TO 39
+       1          40 TO 44
+       1          45 TO 49
+       7          50 TO 99999999: 50+
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:             69        Mean:                 1.4
+ 
+Lead In: E80330.00[Default]
+Default Next Question: E80332.00
+--------------------------------------------------------------------------------
+R00001.00    [PUBID]                                        Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             PUBID, YOUTH CASE IDENTIFICATION CODE
+ 
+COMMENT: YOUTH CASE IDENTIFICATION CODE
+ 
+       0           0
+     998           1 TO 999
+     999        1000 TO 1999
+     997        2000 TO 2999
+     996        3000 TO 3999
+     998        4000 TO 4999
+     996        5000 TO 5999
+     994        6000 TO 6999
+     994        7000 TO 7999
+     989        8000 TO 8999
+      23        9000 TO 9999
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:           9022        Mean:              4504.3
+ 
+Lead In: R72976.00[Default]
+Default Next Question: R05363.00
+--------------------------------------------------------------------------------
+R05363.00    [KEY!SEX]                                      Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!SEX, RS GENDER (SYMBOL)
+ 
+COMMENT: Gender of Youth
+ 
+    4599       1 Male
+    4385       2 Female
+       0       0 No Information
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              2        Mean:                1.49
+ 
+Lead In: R00001.00[Default]
+Default Next Question: R05364.00
+--------------------------------------------------------------------------------
+R05364.01    [KEY!BDATE_M]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+     816           1: January
+     693           2: February
+     760           3: March
+     659           4: April
+     689           5: May
+     720           6: June
+     762           7: July
+     782           8: August
+     839           9: September
+     765          10: October
+     763          11: November
+     736          12: December
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:             12        Mean:                6.56
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Lead In: None.
+Default Next Question: R05364.02
+--------------------------------------------------------------------------------
+R05364.02    [KEY!BDATE_Y]                                  Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)
+ 
+COMMENT: Birthdate of Youth
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:           1980        Max:           1984        Mean:             1982.01
+ 
+Earliest (NonMissing): JANUARY/1980
+Latest   (NonMissing): DECEMBER/1984
+ 
+Lead In: R05364.01[Default]
+Default Next Question: R05366.00
+--------------------------------------------------------------------------------
+R12107.00    [CV_PIAT_PERCENTILE_SCORE]                     Survey Year: 1997
+  TERTIARY VARIABLE
+
+ 
+             RS MATH PIAT PERCENTILE
+ 
+Math PIAT percentile.
+ 
+USER NOTE: USERS SHOULD NO LONGER USE THIS VARIBLE AS IT WAS RECREATED USING 
+UPDATED NORMS. THE NEW VARIABLE IS: CV_PIAT_PERCENTILE_UPD.
+ 
+     301           0: 0%
+    1115           1 TO 10: 1%-10%
+     602          11 TO 20: 11%-20%
+     549          21 TO 30: 21%-30%
+     397          31 TO 40: 31%-40%
+     354          41 TO 50: 41%-50%
+     256          51 TO 60: 51%-60%
+     484          61 TO 70: 61%-70%
+     356          71 TO 80: 71%-80%
+     850          81 TO 90: 81%-90%
+     780          91 TO 100: 91%-100%
+  -------
+    6044
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+Invalid Skip(-3)     323
+TOTAL =========>    6367   VALID SKIP(-4)    2617     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:            100        Mean:                45.9
+ 
+Lead In: R12106.02[Default]
+Default Next Question: R13181.00
+--------------------------------------------------------------------------------
+R12358.00    [CV_SAMPLE_TYPE]                               Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE
+ 
+Sample type: Is the respondent a member of the cross-sectional sample or the 
+oversample?
+ 
+    6748       1 Cross-sectional
+    2236       0 Oversample
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:              1        Mean:                 .75
+ 
+Lead In: R12338.00[Default]
+Default Next Question: R12359.00
+--------------------------------------------------------------------------------
+R14826.00    [KEY!RACE_ETHNICITY]                           Survey Year: 1997
+  PRIMARY VARIABLE
+
+ 
+             KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)
+ 
+COMMENT: Combined race - ethnicity variable
+ 
+    2335       1 Black
+    1901       2 Hispanic
+      83       3 Mixed Race (Non-Hispanic)
+    4665       4 Non-Black / Non-Hispanic
+  -------
+    8984
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    8984   VALID SKIP(-4)       0     NON-INTERVIEW(-5)       0
+ 
+Min:              1        Max:              4        Mean:                2.79
+ 
+Lead In: R05387.00[Default]
+Default Next Question: R05389.00
+--------------------------------------------------------------------------------
+R98296.00    [ASVAB_MATH_VERBAL_SCORE_PCT]                  Survey Year: 1999
+  PRIMARY VARIABLE
+
+ 
+             ASVAB MATH_VERBAL SCORE PERCENT
+ 
+To calculate the ASVAB_MATH_VERBAL_SCORE_PCT, NLS Program staff first grouped 
+respondents into three-month age groups.  That is, the oldest cohort included 
+those born from January through March of 1980, while the youngest were born from
+October through December 1984 (a total of 20 cohorts, with an average of about 
+350 respondents per cohort).  Custom sampling weights (computed for the sample 
+of 7,093 respondents who have scores on all four exams) were assigned for each 
+respondent's scores.  Within each three-month age group and using the sampling 
+weights, we assigned percentiles for the theta scores for the tests on 
+Mathematical Knowledge (MK), Arithmetic Reasoning (AR), Word Knowledge (WK), and
+Paragraph Comprehension (PC) based on the weighted number of respondents scoring
+below each score.  We added the percentile scores for WK and PC to get an 
+aggregate Verbal score (V) for which an aggregated intra-group, internally 
+normed, percentile was then computed.  NLS Program staff then added the 
+percentile scores for MK, AR and two times the aggregated percentile for V.  
+Finally, within each group we computed a percentile score, using the weights, on
+this aggregate score, yielding a final value between zero and 99.
+ 
+COMMENT: USERS SHOULD NOTE THAT, ALTHOUGH THE FORMULA IS SIMILAR TO THE AFQT 
+SCORE GENERATED BY THE DEPARTMENT OF DEFENSE FOR THE NLSY79 COHORT, THIS 
+VARIABLE REFLECTS WORK DONE BY NLS PROGRAM STAFF AND IS NEITHER GENERATED NOR 
+ENDORSED BY DOD.  FOR MORE DETAILS, USERS SHOULD READ THE NLSY97 USER'S GUIDE 
+SECTION ON THE ADMINISTRATION OF THE CAT-ASVAB, ASVAB_MATH_VERBAL SCORE_PCT.
+ 
+NOTE: Please see appendix 10 in the codebook supplement for more information on 
+the ASVAB.
+NOTE:  3 IMPLIED DECIMAL PLACES
+ 
+      20           0
+      85           1 TO 999: .001-.999
+    1728        1000 TO 19999: 1.000-19.999
+    1509       20000 TO 39999: 20.000-39.999
+    1332       40000 TO 59999: 40.000-59.999
+    1247       60000 TO 79999: 60.000-79.999
+    1172       80000 TO 100000: 80.000-100.000
+  -------
+    7093
+ 
+Refusal(-1)            0
+Don't Know(-2)         0
+TOTAL =========>    7093   VALID SKIP(-4)    1891     NON-INTERVIEW(-5)       0
+ 
+Min:              0        Max:         100000        Mean:            45317.19
+ 
+Lead In: R97127.00[Default]
+Default Next Question: R97128.00
+--------------------------------------------------------------------------------
+U42824.00    [YINC-1800]                                    Survey Year: 2019
+  PRIMARY VARIABLE
+
+ 
+             ESTIMATED INCOME FROM WAGES AND SALARY IN PAST YEAR
+ 
+(REFER TO SHOWCARD FF)  [Please look at this card]  What is your best estimate 
+of the amount you received in 2018 in wages, salary, commissions and tips?  (IF 
+SHOWCARDS ARE NOT BEING USED, ADD: I will read the categories in order. Please 
+stop me when I reach the correct one.)
+ 
+UNIVERSE: R DK/RF to answer how much income received from all jobs
+ 
+      49       1 A. $1 - $5,000
+      48       2 B. $5,001 - $10,000
+      78       3 C. $10,001 - $25,000
+      56       4 D. $25,001 - $50,000
+      41       5 E. $50,001 - $100,000
+       3       6 F. $100,001 - $250,000
+       2       7 G. More than $250,000
+  -------
+     277
+ 
+Refusal(-1)           45
+Don't Know(-2)        13
+TOTAL =========>     335   VALID SKIP(-4)    6612     NON-INTERVIEW(-5)    2037
+ 
+Min:              1        Max:              7        Mean:                3.03
+ 
+Lead In: U42823.00[-2:-1]
+Default Next Question: U42825.00

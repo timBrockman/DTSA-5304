@@ -1,0 +1,15 @@
+
+
+Reference
+Number     Year  Variable Description                                      Question Name                
+----------------------------------------------------------------------------------------------------------
+E80331.00  XRND  TOTAL NUMBER OF ARRESTS                                   ARREST_TOTNUM                
+R00001.00  1997  PUBID, YOUTH CASE IDENTIFICATION CODE                     PUBID                        
+R05363.00  1997  KEY!SEX, RS GENDER (SYMBOL)                               KEY!SEX                      
+R05364.01  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)               KEY!BDATE_M                  
+R05364.02  1997  KEY!BDATE, RS BIRTHDATE MONTH/YEAR (SYMBOL)               KEY!BDATE_Y                  
+R12107.00  1997  RS MATH PIAT PERCENTILE                                   CV_PIAT_PERCENTILE_SCORE     
+R12358.00  1997  SAMPLE TYPE.  CROSS-SECTIONAL OR OVERSAMPLE               CV_SAMPLE_TYPE               
+R14826.00  1997  KEY!RACE_ETHNICITY, COMBINED RACE AND ETHNICITY (SYMBOL)  KEY!RACE_ETHNICITY           
+R98296.00  1999  ASVAB MATH_VERBAL SCORE PERCENT                           ASVAB_MATH_VERBAL_SCORE_PCT  
+U42824.00  2019  ESTIMATED INCOME FROM WAGES AND SALARY IN PAST YEAR       YINC-1800                    
