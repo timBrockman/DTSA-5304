@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-2a730fb4e03ef334615f87f99f31878c"}, "mark": {"type": "area"}, "encoding": {"tooltip": [{"field": "ASVAB Percentile", "type": "quantitative"}], "x": {"axis": {"labelExpr": "\n    datum.label == 1 ? 'January' :\n    datum.label == 2 ? 'Febuary' :\n    datum.label == 3 ? 'March' :\n    datum.label == 4 ? 'April' :\n    datum.label == 5 ? 'May' :\n    datum.label == 6 ? 'June' :\n    datum.label == 7 ? 'July' :\n    datum.label == 8 ? 'August' :\n    datum.label == 9 ? 'September' :\n    datum.label == 10 ? 'October' :\n    datum.label == 11 ? 'November' :\n    'December'\n"}, "field": "Birth Month", "type": "nominal"}, "y": {"field": "ASVAB Percentile", "scale": {}, "type": "quantitative"}}, "height": 400, "width": 400, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-2a730fb4e03ef334615f87f99f31878c": [{"Birth Month": 1, "ASVAB Percentile": 46.65057575757576}, {"Birth Month": 2, "ASVAB Percentile": 46.033086956521736}, {"Birth Month": 3, "ASVAB Percentile": 44.39925984251968}, {"Birth Month": 4, "ASVAB Percentile": 44.60946956521739}, {"Birth Month": 5, "ASVAB Percentile": 46.75741592920354}, {"Birth Month": 6, "ASVAB Percentile": 44.604491803278684}, {"Birth Month": 7, "ASVAB Percentile": 50.25860465116279}, {"Birth Month": 8, "ASVAB Percentile": 42.49540298507463}, {"Birth Month": 9, "ASVAB Percentile": 42.7424393939394}, {"Birth Month": 10, "ASVAB Percentile": 44.46700854700855}, {"Birth Month": 11, "ASVAB Percentile": 48.845171875}, {"Birth Month": 12, "ASVAB Percentile": 42.565771186440685}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

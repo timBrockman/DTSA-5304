@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.16.3"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-e2252b2fc13f369fb54139938b4b7c81"}, "mark": {"type": "area"}, "encoding": {"tooltip": [{"field": "PIAT Percentile", "type": "quantitative"}], "x": {"axis": {"labelExpr": "\n    datum.label == 1 ? 'January' :\n    datum.label == 2 ? 'Febuary' :\n    datum.label == 3 ? 'March' :\n    datum.label == 4 ? 'April' :\n    datum.label == 5 ? 'May' :\n    datum.label == 6 ? 'June' :\n    datum.label == 7 ? 'July' :\n    datum.label == 8 ? 'August' :\n    datum.label == 9 ? 'September' :\n    datum.label == 10 ? 'October' :\n    datum.label == 11 ? 'November' :\n    'December'\n"}, "field": "Birth Month", "type": "nominal"}, "y": {"field": "PIAT Percentile", "scale": {}, "type": "quantitative"}}, "height": 400, "width": 400, "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json", "datasets": {"data-e2252b2fc13f369fb54139938b4b7c81": [{"Birth Month": 1, "PIAT Percentile": 47.666666666666664}, {"Birth Month": 2, "PIAT Percentile": 42.945454545454545}, {"Birth Month": 3, "PIAT Percentile": 44.87943262411348}, {"Birth Month": 4, "PIAT Percentile": 46.71774193548387}, {"Birth Month": 5, "PIAT Percentile": 43.55223880597015}, {"Birth Month": 6, "PIAT Percentile": 50.81294964028777}, {"Birth Month": 7, "PIAT Percentile": 53.36486486486486}, {"Birth Month": 8, "PIAT Percentile": 42.81528662420382}, {"Birth Month": 9, "PIAT Percentile": 43.27922077922078}, {"Birth Month": 10, "PIAT Percentile": 43.30434782608695}, {"Birth Month": 11, "PIAT Percentile": 48.84137931034483}, {"Birth Month": 12, "PIAT Percentile": 43.92424242424242}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
